@@ -1,0 +1,210 @@
+<!---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Practice day 1</title>
+</head>
+<body>
+  <h1>JavaScript Practice Code</h1>
+
+  <h2>1. Hello World</h2>
+  <script>
+    console.log('Hello World!');
+    alert('Hello World!');
+  </script>
+
+  <h2>2. Linking a JavaScript File</h2>
+  <p>Check the console for a message!</p>
+  <script>
+    console.log('JavaScript is linked correctly!');
+    alert('JavaScript file linked successfully!');
+  </script>
+
+  <h2>3. Values and Variables</h2>
+  <script>
+    let name = 'Jagadeesh';
+    const birthYear = 2001;
+    let isStudent = true;
+    console.log(name, birthYear, isStudent);
+
+    let car = 'Toyota';
+    let speed = 120;
+    console.log('Car:', car, 'Speed:', speed);
+  </script>
+
+  <h2>4. Data Types</h2>
+  <script>
+    let myName = 'jaga';
+    let age = 23;
+    let isStudent = true;
+    let job;
+    let car = null;
+    console.log(typeof myName, typeof age, typeof isStudent, typeof job, typeof car);
+
+    let height = 1.75;
+    let isTall = height > 1.8;
+    console.log(typeof height, typeof isTall);
+  </script>
+
+  <h2>5. let, const, and var</h2>
+  <script>
+    let firstName = 'Sarah';
+    const birthYear = 1990;
+    var profession = 'Engineer';
+    console.log(firstName, birthYear, profession);
+
+    let country = 'India';
+    const language = 'Hindi';
+    var population = 1300;
+    console.log(country, language, population);
+  </script>
+
+  <h2>6. Basic Operators</h2>
+  <script>
+    let currentYear = 2024;
+    let age = currentYear - 1995;
+    console.log('Age:', age);
+
+    let sum = 10 + 5;
+    let product = 10 * 5;
+    console.log('Sum:', sum, 'Product:', product);
+
+    let difference = 50 - 20;
+    let division = 100 / 4;
+    console.log('Difference:', difference, 'Division:', division);
+  </script>
+
+  <h2>7. Operator Precedence</h2>
+  <script>
+    let year = 2024;
+    let ageJaga = year - 1995;
+    let ageJagadeesh = year - 1990;
+    let averageAge = (ageJaga + ageJagadeesh) / 2;
+    console.log('Average Age:', averageAge);
+
+    let total = 10 + 2 * 5;  // Multiplication first
+    console.log('Total:', total);
+  </script>
+
+  <h2>8. Strings and Template Literals</h2>
+  <script>
+    let name = 'John';
+    let age = 28;
+    let job = 'Developer';
+    let intro = `Hi, I'm ${name}, a ${age}-year-old ${job}.`;
+    console.log(intro);
+
+    let city = 'New York';
+    let message = `Welcome to ${city}! Enjoy your stay.`;
+    console.log(message);
+  </script>
+
+  <h2>9. if / else Statements</h2>
+  <script>
+    let age = 18;
+    if (age >= 18) {
+      console.log('You can vote.');
+    } else {
+      console.log('You are too young to vote.');
+    }
+
+    let weather = 'rainy';
+    if (weather === 'sunny') {
+      console.log('Let’s go to the beach!');
+    } else {
+      console.log('Stay inside and watch a movie.');
+    }
+  </script>
+
+  <h2>10. Type Conversion and Coercion</h2>
+  <script>
+    let year = '2024';
+    console.log(Number(year), year);  // Convert string to number
+
+    let num = 10 + '5';  // Coercion (number + string)
+    console.log(num);    // Output: '105'
+
+    let num2 = '10' - 5;  // Coercion (string - number)
+    console.log(num2);    // Output: 5
+  </script>
+
+  <h2>11. Equality Operators: == vs. ===</h2>
+  <script>
+    let num = '18';
+    if (num == 18) {
+      console.log('Loose equality, value matches.');
+    }
+    if (num === 18) {
+      console.log('Strict equality, this will not log.');
+    }
+
+    let value = 0;
+    if (value == false) {
+      console.log('Loose equality, value is false.');
+    }
+    if (value === false) {
+      console.log('Strict equality, this will not log.');
+    }
+  </script>
+
+  <h2>12. Logical Operators</h2>
+  <script>
+    let age = 20;
+    if (age >= 18 && age <= 30) {
+      console.log('You are eligible for the program.');
+    } else {
+      console.log('You are not eligible.');
+    }
+
+    let hasLicense = true;
+    let hasInsurance = false;
+    if (hasLicense || hasInsurance) {
+      console.log('You can drive.');
+    } else {
+      console.log('You cannot drive.');
+    }
+  </script>
+
+  <h2>13. The switch Statement</h2>
+  <script>
+    let day = 'Tuesday';
+    switch (day) {
+      case 'Monday':
+        console.log('Start of the week!');
+        break;
+      case 'Tuesday':
+        console.log('Second day of the week.');
+        break;
+      default:
+        console.log('Not Monday or Tuesday.');
+    }
+
+    let fruit = 'apple';
+    switch (fruit) {
+      case 'banana':
+        console.log('I love bananas!');
+        break;
+      case 'apple':
+        console.log('Apples are great.');
+        break;
+      default:
+        console.log('Unknown fruit.');
+    }
+  </script>
+
+  <h2>14. The Conditional (Ternary) Operator</h2>
+  <script>
+    let age = 22;
+    let canVote = age >= 18 ? 'Yes, you can vote.' : 'No, you are too young.';
+    console.log(canVote);
+
+    let score = 85;
+    let result = score >= 50 ? 'Pass' : 'Fail';
+    console.log(result);
+  </script>
+
+</body>
+</html>
